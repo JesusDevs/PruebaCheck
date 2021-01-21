@@ -1,23 +1,20 @@
-package com.example.proyectofinaljava.loging_activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.PruebaCheck.loging_activity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.proyectofinaljava.R;
-import com.example.proyectofinaljava.databinding.ActivityLoginBinding;
-import com.example.proyectofinaljava.second_activity.FirstFragment;
-import com.example.proyectofinaljava.second_activity.SecondActivity;
-import com.example.proyectofinaljava.second_activity.SecondFragment;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.PruebaCheck.R;
+import com.example.PruebaCheck.databinding.ActivityLoginBinding;
+import com.example.PruebaCheck.second_activity.SecondActivity;
 
 public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding binding;
-    private String password="123Pass";
+    private final String password = "123Pass";
     private String passScreen;
     private int countPass = 0;
     @Override

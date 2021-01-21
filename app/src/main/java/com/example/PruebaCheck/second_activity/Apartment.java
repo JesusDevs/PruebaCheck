@@ -1,27 +1,28 @@
-package com.example.proyectofinaljava.second_activity;
+package com.example.PruebaCheck.second_activity;
 
 public class Apartment {
-    private String buildingName;  // Nombre del edificio
+
+    private String nameDepto;  // Nombre del edificio
     private String projectName;   // Nombre del Proyecto
-    private String unitId;        // Numero de unidad o departamento
+    private String numberUnit;        // Numero de unidad o departamento
     private String address;       // Dirección
     private String urlImageBuilding;  // url de imagen del edificio
 
     public Apartment(String buildingName, String projectName, String unitId,
                      String address, String urlImageBuilding) {
-        this.buildingName = buildingName;
+        this.nameDepto = buildingName;
         this.projectName = projectName;
-        this.unitId = unitId;
+        this.numberUnit = unitId;
         this.address = address;
         this.urlImageBuilding = urlImageBuilding;
     }
 
     public String getBuildingName() {
-        return buildingName;
+        return nameDepto;
     }
 
     public void setBuildingName(String buildingName) {
-        this.buildingName = buildingName;
+        this.nameDepto = buildingName;
     }
 
     public String getProjectName() {
@@ -33,11 +34,11 @@ public class Apartment {
     }
 
     public String getUnitId() {
-        return unitId;
+        return numberUnit;
     }
 
     public void setUnitId(String unitId) {
-        this.unitId = unitId;
+        this.numberUnit = unitId;
     }
 
     public String getAddress() {
@@ -59,9 +60,9 @@ public class Apartment {
     @Override
     public String toString() {
         return "Apartment{" +
-                "buildingName='" + buildingName + '\'' +
+                "buildingName='" + nameDepto + '\'' +
                 ", projectName='" + projectName + '\'' +
-                ", unitId='" + unitId + '\'' +
+                ", unitId='" + numberUnit + '\'' +
                 ", address='" + address + '\'' +
                 ", urlImageBuilding='" + urlImageBuilding + '\'' +
                 '}';

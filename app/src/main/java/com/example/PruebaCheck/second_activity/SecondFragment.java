@@ -1,26 +1,21 @@
-package com.example.proyectofinaljava.second_activity;
+package com.example.PruebaCheck.second_activity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
-import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.service.autofill.OnClickAction;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.RadioGroup;
-import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
-import com.example.proyectofinaljava.R;
-import com.example.proyectofinaljava.databinding.FragmentSecondBinding;
-import com.google.android.material.chip.ChipGroup;
+import com.example.PruebaCheck.R;
+import com.example.PruebaCheck.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {
     private FragmentSecondBinding binding;
@@ -75,7 +70,7 @@ public class SecondFragment extends Fragment {
         binding.txBuilding.setText(name1);
         binding.txProyect.setText(name2);
         binding.txAparment.setText(name3);
-        binding.txAddress.setText(name4);
+        binding.txAparment.setText(name4);
         Glide.with(getContext()).load(url).centerCrop().into(binding.deptoImage);
         return binding.getRoot();
     }
@@ -105,11 +100,11 @@ public class SecondFragment extends Fragment {
         } else {
             pointBtn4 = 0;
         }
-        if (binding.rdBtn1.isChecked()) {
+        if (binding.radioBtn1.isChecked()) {
             pointRdBtn = 3;
-        } else if (binding.rdBtn2.isChecked()){
+        } else if (binding.radioBtn2.isChecked()) {
             pointRdBtn = 2;
-        }else {
+        } else {
             pointRdBtn = 1;
         }
         result = (pointBtn1+pointBtn2+pointBtn3+pointBtn4)*pointRdBtn;

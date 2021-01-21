@@ -1,10 +1,10 @@
-package com.example.proyectofinaljava.second_activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.PruebaCheck.second_activity;
 
 import android.os.Bundle;
 
-import com.example.proyectofinaljava.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.PruebaCheck.R;
 
 public class SecondActivity extends AppCompatActivity {
 

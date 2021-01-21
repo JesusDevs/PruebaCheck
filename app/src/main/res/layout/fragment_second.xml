@@ -31,6 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo"
         tools:src="@tools:sample/avatars" />
 
     <TextView
@@ -38,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="@string/textview1"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
@@ -48,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="@string/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
@@ -58,20 +59,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="@string/textview2"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txBuilding" />
-
-    <TextView
-        android:id="@+id/txAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/txProyect" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -86,42 +77,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="9dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chipGroup">
+        app:layout_constraintBottom_toTopOf="@+id/txResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
-            android:id="@+id/rdBtn1"
+            android:id="@+id/radioBtn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" Estado general de las terminaciones Normal"
+            android:text="@string/estado_general_de_las_terminaciones_normal"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/rdBtn2"
+            android:id="@+id/radioBtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Estado general de las terminaciones regular"
+            android:text="@string/estado_general_de_las_terminaciones_regular"
             android:textSize="14sp" />
 
         <RadioButton
-            android:id="@+id/rdBtn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Estado general de las terminaciones malas"
+            android:id="@+id/radioBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/estado_general_de_las_terminaciones_malas"
             android:textSize="14sp" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/txResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/result"
+        android:layout_width="382dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/puntaje"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -129,14 +125,15 @@
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#4CAF50"
-        android:text="Guardar"
+        android:text="@string/guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txResult" />
+        app:layout_constraintTop_toBottomOf="@+id/txResult"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnAlert"
@@ -144,17 +141,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#676666"
-        android:text="Enviar alerta"
+        android:text="@string/enviar_alerta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txResult" />
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chipGroup"
-        android:layout_width="264dp"
-        android:layout_height="192dp"
+        android:layout_width="348dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5">
 
@@ -163,28 +162,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:text="Luces del apartamento" />
+            android:text="@string/luces_del_apartamento" />
 
         <CheckBox
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:text="elementos del baño" />
+            android:text="@string/elementos__ba_o" />
 
         <CheckBox
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:text="Elementos de la cocina" />
+            android:text="@string/elementos_de_la_cocina" />
 
         <CheckBox
             android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:text="elementos del dormitorio" />
+            android:text="@string/elementos_dormitorio" />
 
     </com.google.android.material.chip.ChipGroup>
 

@@ -1,6 +1,9 @@
-package com.example.proyectofinaljava.second_activity;
+package com.example.PruebaCheck.second_activity;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,13 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
-
-import com.example.proyectofinaljava.R;
-import com.example.proyectofinaljava.databinding.FragmentFirstBinding;
+import com.example.PruebaCheck.R;
+import com.example.PruebaCheck.databinding.FragmentFirstBinding;
 
 import java.util.ArrayList;
 import java.util.List;

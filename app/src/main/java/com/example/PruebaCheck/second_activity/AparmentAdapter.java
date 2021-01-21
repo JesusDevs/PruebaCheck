@@ -1,28 +1,26 @@
-package com.example.proyectofinaljava.second_activity;
+package com.example.PruebaCheck.second_activity;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.proyectofinaljava.databinding.AparmentListDataBinding;
+import com.example.PruebaCheck.databinding.AparmentListDataBinding;
 
 import java.util.List;
 
-public class AparmentAdapter extends RecyclerView.Adapter<AparmentAdapter.aparmentViewHolder>{
-    private List<Apartment>apartmentList;
-    private SendApartment sendApartment;
+public class AparmentAdapter extends RecyclerView.Adapter<AparmentAdapter.aparmentViewHolder> {
+    private final List<Apartment> apartmentList;
+    private final SendApartment sendApartment;
 
-    public AparmentAdapter(List<Apartment>apartmentList,SendApartment sendApartment){
+    public AparmentAdapter(List<Apartment> apartmentList, SendApartment sendApartment) {
         this.apartmentList = apartmentList;
-        this.sendApartment= sendApartment;
+        this.sendApartment = sendApartment;
     }
 
     @NonNull
