@@ -5,19 +5,19 @@
     <string name="result">El puntaje obtenido es: %1$s</string>
     <string name="ingresar">Ingresar</string>
     <string name="password">Password</string>
-    <string name="estado_general_de_las_terminaciones_regular">Estado general de las terminaciones regular</string>
+    <string name="estado_general_terminaciones_regular">Estado general , terminaciones regular</string>
     <string name="guardar">Guardar</string>
     <string name="elementos_dormitorio">elementos del dormitorio</string>
-    <string name="estado_general_de_las_terminaciones_malas">Estado general de las terminaciones malas</string>
+    <string name="estado_general_terminaciones_mal_estado">Estado general , terminaciones mal estado</string>
     <string name="textview1">TextView</string>
-    <string name="estado_general_de_las_terminaciones_normal">Estado general de las terminaciones Normal</string>
+    <string name="estado_general_terminaciones_normal">Estado general , terminaciones Normal</string>
     <string name="elementos__ba_o">elementos del baño</string>
     <string name="puntaje">puntaje</string>
     <string name="enviar_alerta">Enviar alerta</string>
     <string name="textView">TextView</string>
     <string name="textview2">TextView</string>
-    <string name="luces_del_apartamento">Luces del apartamento</string>
+    <string name="luces_del_departamento">Luces del departamento</string>
     <string name="textview3">TextView</string>
-    <string name="elementos_de_la_cocina">Elementos de la cocina</string>
+    <string name="elementos_cocina">Elementos cocina</string>
     <string name="todo">TODO</string>
 </resources>
